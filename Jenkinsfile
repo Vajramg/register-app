@@ -45,7 +45,8 @@ stage("SonarQube Analysis"){
                         sh "mvn sonar:sonar"
 		        }
 	           }	
-
+	   } 
+	
 	   stage("Quality Gate"){
            steps {
                script {
