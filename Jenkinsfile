@@ -52,6 +52,7 @@ stage("SonarQube Analysis"){
                     waitForQualityGate abortPipeline: false, credentialsId: 'jenkins-sonarqube'
                 }	
             }
-	}
-   }
-}
+	 }
+      }
+   } 
+}	    
