@@ -44,8 +44,9 @@ stage("SonarQube Analysis"){
 		        withSonarQubeEnv(credentialsId: 'jenkins-sonarqube') { 
                         sh "mvn sonar:sonar"
 		        }
-	           }	
-	   } 
+	           }
+	    }
+} 
 	
 	   stage("Quality Gate"){
            steps {
