@@ -85,6 +85,4 @@ stage("SonarQube Analysis"){
                     sh "docker rmi ${IMAGE_NAME}:latest"
                }
           }
-       }
-   } 
-}	  
+       }  
