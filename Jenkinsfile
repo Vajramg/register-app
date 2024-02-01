@@ -69,6 +69,8 @@ stage("SonarQube Analysis"){
                     }
                 }
             }
+	    
+	}
 		    
            stage("Trivy Scan") {
            steps {
@@ -83,7 +85,8 @@ stage("SonarQube Analysis"){
                script {
                     sh "docker rmi ${IMAGE_NAME}:${IMAGE_TAG}"
                     sh "docker rmi ${IMAGE_NAME}:latest"
-               }
+	       }
           }
        }  
-}
+    }
+ }
