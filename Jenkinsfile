@@ -69,6 +69,7 @@ stage("SonarQube Analysis"){
                     }
                 }
             }
+		    
            stage("Trivy Scan") {
            steps {
                script {
